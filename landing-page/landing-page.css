@@ -1,0 +1,36 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Hero Section with Flexbox */
+.hero {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 400px;           /* Adjust to desired height */
+    background-color: #f0f0f0; /* Just a background color for visualization */
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto; /* Ensure image scales responsively */
+}
+
+/* Grid Section */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    margin-top: 40px;
+}
+
+.grid-content .item {
+    background-color: #e0e0e0; /* Just for visualization */
+    padding: 20px;
+    text-align: center;
+}
