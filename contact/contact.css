@@ -16,6 +16,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin-bottom: 100px;
   grid-template-areas: 
   "grid-box-1 grid-box-2"
   "grid-box-3 grid-box-4";
@@ -25,7 +26,6 @@ h2 {
 .grid-box-2,
 .grid-box-3,
 .grid-box-4 {
-  background-color: pink;
   height: 500px;
 }
 
