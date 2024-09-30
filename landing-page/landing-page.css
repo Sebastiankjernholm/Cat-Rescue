@@ -4,10 +4,60 @@
     box-sizing: border-box;
 }
 
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #E6A62D;
+}
+
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    gap: 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-links ul li a:hover {
+    color: #E6A62D;
+}
+
+
+
+
 .hero {
-    margin-top: 70px;
     height: 100%;
-    /* Set fixed height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +180,7 @@ ul li {
     padding: 10px 0;
 }
 
-ul li::after {
+.footer-container ul li::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -174,6 +224,12 @@ ul li::after {
 
 /* Phone screens */
 @media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .cat-grid {
         grid-template-columns: 1fr;
     }
@@ -194,4 +250,5 @@ ul li::after {
     .adoption p {
         font-size: 30px;
     }
+
 }
