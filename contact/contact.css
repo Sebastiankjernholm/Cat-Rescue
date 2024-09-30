@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 80%;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 60px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 100px;
+  grid-template-areas: 
+  "grid-box-1 grid-box-2"
+  "grid-box-3 grid-box-4";
+}
+
+.grid-box-1 {
+  grid-area: grid-box-1;
+}
+.grid-box-2 {
+  grid-area: grid-box-2;
+}
+.grid-box-3 {
+  grid-area: grid-box-3;
+}
+.grid-box-4 {
+  grid-area: grid-box-4;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0 30px 30px 30px;
+}
+
+p {
+  line-height: 28px;
+  margin: 0;
+}
+
+section {
+width: 500px;
+margin: auto;
+margin-bottom: 80px;
+}
+
+input, textarea {
+width: 97%;
+padding: 5px;
+margin: 5px;
+}
+
+textarea {
+resize: none;
+}
+
+#submit {
+background-color: #E6A62D;
+color: white;
+border: none;
+font-weight: 600;
+padding: 10px;
+}
+
+#submit:hover {
+background-color: #05325a;
+}
+
+footer {
+display: grid;
+}
+
+.footer-container {
+background-color: #021E37;
+height: 200px; 
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.footer-container div h3 {
+color: #E6A62D;
+}
+.footer-container div p {
+color: white;
+}
+
+ul {
+color: white;
+display: flex;
+list-style-type: none;
+justify-content: space-between;
+width: 300px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  padding: 10px 0;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  width: 50%;
+  height: 2px;
+  background-color: #E6A62D;
+  transform: translateX(50%);
+}
+
+.footer-li {
+  text-decoration: none;
+}
+
+.footer-li:visited {
+  color: inherit;
+}
+
+.footer-li:hover {
+  color: #E6A62D;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 960px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "grid-box-1" 
+    "grid-box-2"
+    "grid-box-4" 
+    "grid-box-3";
+  }
+
+  .img-one {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
+  .img-two {
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    text-align: center;
+    height: 400px;
+  }
+
+  .grid-list ul {
+    display: grid;
+    justify-content: center;
+    padding: 0;
+  }
+}
