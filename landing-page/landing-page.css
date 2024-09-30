@@ -1,15 +1,13 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* Hero Section Styling */
 .hero {
     margin-top: 70px;
-    height: 100%; /* Set fixed height */
+    height: 100%;
+    /* Set fixed height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,38 +16,41 @@
 
 .hero img {
     width: 100%;
-    overflow: hidden; /* Prevent overflow scroll */
+    height: auto;
+    overflow: hidden;
 }
 
 
 .hero-content {
-    position: absolute; /* Overlay the text on the image */
+    position: absolute;
     color: white;
     text-align: center;
     border-radius: 10px;
     margin-left: 50%;
 }
 
+
 .hero-text h2 {
-    font-size: 2rem;
     margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 50px;
 }
 
 .hero-text button {
     background-color: #E6A62D;
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: white;
 }
 
 .hero-text button:hover {
     background-color: white
 }
 
-
-/* Adoption Section (Main Content) */
 .adoption {
     text-align: center;
     margin-top: 40px;
@@ -57,41 +58,140 @@
 }
 
 .adoption h2 {
-    font-size: 1.8rem;
     color: #E6A62D;
     margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 20px;
 }
 
 .adoption p {
-    font-size: 1.4rem;
     margin-bottom: 20px;
     color: #2c3e50;
+    font-family: 'Open Sans';
+    font-size: 40px;
 }
 
-/* Grid for Cat Images */
 .cat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 20px;
 }
 
-
-
-/* Standardized image dimensions */
 .cat-item img {
-    width: 100%; /* Full width within the grid column */
-    max-width: 250px; /* Set maximum width to keep it reasonable */
-    height: 350px; /* Set fixed height */
-    object-fit: cover; /* Ensures the image fills the area without distortion */
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s;
 }
 
 
 
 .cat-item p {
     margin-top: 10px;
-    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-size: 20px;
     color: #34495e;
+}
+
+footer {
+    display: grid;
+}
+
+.footer-container {
+    background-color: #021E37;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-container div h3 {
+    color: #E6A62D;
+}
+
+.footer-container div p {
+    color: white;
+}
+
+ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 300px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px 0;
+}
+
+ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #E6A62D;
+    transform: translateX(50%);
+}
+
+.footer-li {
+    color: white !important;
+    text-decoration: none;
+}
+
+.footer-li:visited {
+    color: white !important;
+}
+
+.footer-li:hover {
+    color: #E6A62D !important;
+}
+
+/* Media Queries för Tablet & telefon
+
+/* Tablet screens */
+@media (min-width: 768px) and (max-width: 960px) {
+    .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-text h2 {
+        font-size: 40px;
+    }
+
+    .hero-text button {
+        font-size: 20px;
+    }
+}
+
+
+/* Phone screens */
+@media (max-width: 768px) {
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text button {
+        font-size: 18px;
+    }
+
+    .adoption p {
+        font-size: 30px;
+    }
 }
