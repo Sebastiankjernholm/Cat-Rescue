@@ -15,18 +15,11 @@ h2 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 80px;
   margin-bottom: 100px;
   grid-template-areas: 
   "grid-box-1 grid-box-2"
   "grid-box-3 grid-box-4";
-}
-
-.grid-box-1,
-.grid-box-2,
-.grid-box-3,
-.grid-box-4 {
-  height: 500px;
 }
 
 .grid-box-1 {
@@ -44,6 +37,7 @@ h2 {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .content {
@@ -82,8 +76,6 @@ padding: 10px;
 #submit:hover {
 background-color: #05325a;
 }
-
-
 
 footer {
 display: grid;
@@ -145,7 +137,7 @@ ul li::after {
 
 /* TABLET */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -165,9 +157,9 @@ ul li::after {
     display: flex;
     margin: auto;
   }
+}
 
-
-
+@media screen and (max-width: 768px) {
   .footer-container {
     display: grid;
     text-align: center;
