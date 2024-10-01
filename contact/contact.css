@@ -14,7 +14,7 @@ h2 {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 500px 500px;
   gap: 80px;
   margin-bottom: 100px;
   grid-template-areas: 
@@ -27,6 +27,7 @@ h2 {
 }
 .grid-box-2 {
   grid-area: grid-box-2;
+  align-self: center;
 }
 .grid-box-3 {
   grid-area: grid-box-3;
@@ -71,6 +72,7 @@ color: white;
 border: none;
 font-weight: 600;
 padding: 10px;
+width: 100%;
 }
 
 #submit:hover {
@@ -111,7 +113,7 @@ ul li {
   padding: 10px 0;
 }
 
-ul li::after {
+.footer-container ul li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -134,12 +136,20 @@ ul li::after {
   color: #E6A62D;
 }
 
+/* SMALLER SCREEN */
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 400px 400px;
+  }
+}
+
 
 /* TABLET */
 
 @media screen and (max-width: 960px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 700px;
     grid-template-areas:
     "grid-box-1" 
     "grid-box-2"
@@ -160,6 +170,10 @@ ul li::after {
 }
 
 @media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 500px;
+    margin: auto;
+  }
   .footer-container {
     display: grid;
     text-align: center;
