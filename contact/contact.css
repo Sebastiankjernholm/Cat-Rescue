@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -14,9 +15,10 @@ header {
 
 .header-container {
   max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .logo {
@@ -32,7 +34,7 @@ header {
 .logo span {
   font-weight: bold;
   font-size: 24px;
-  color: #E6A62D;
+  color: #e6a62d;
 }
 
 .nav-links ul {
@@ -51,10 +53,14 @@ header {
 }
 
 .nav-links ul li a:hover {
-  color: #E6A62D;
+  color: #e6a62d;
 }
 
 main {
+  width: 100%;
+}
+
+.main-content {
   max-width: 80%;
   margin: auto;
 }
@@ -63,32 +69,38 @@ h2 {
   text-align: center;
   margin: 60px;
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: repeat(2, minmax(0, 500px));
   gap: 80px;
   margin-bottom: 100px;
-  grid-template-areas: 
-  "grid-box-1 grid-box-2"
-  "grid-box-3 grid-box-4";
+  grid-template-areas:
+    "grid-box-1 grid-box-2"
+    "grid-box-3 grid-box-4";
+  justify-content: center;
 }
 
 .grid-box-1 {
   grid-area: grid-box-1;
 }
+
 .grid-box-2 {
   grid-area: grid-box-2;
   align-self: center;
 }
+
 .grid-box-3 {
   grid-area: grid-box-3;
 }
+
 .grid-box-4 {
   grid-area: grid-box-4;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -102,63 +114,69 @@ p {
 }
 
 section {
-width: 500px;
-margin: auto;
-margin-bottom: 80px;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 80px;
 }
 
-input, textarea {
-width: 97%;
-padding: 5px;
-margin: 5px;
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
 }
 
 textarea {
-resize: none;
+  resize: none;
 }
 
 #submit {
-background-color: #E6A62D;
-color: white;
-border: none;
-font-weight: 600;
-padding: 10px;
-width: 100%;
+  background-color: #e6a62d;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
 }
 
 #submit:hover {
-background-color: #05325a;
+  background-color: #05325a;
 }
 
 footer {
-display: grid;
+  width: 100%;
 }
 
 .footer-container {
-background-color: #021E37;
-height: 200px; 
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+  background-color: #021e37;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
 }
 
 .footer-container div h3 {
-color: #E6A62D;
+  color: #e6a62d;
 }
+
 .footer-container div p {
-color: white;
+  color: white;
 }
 
-ul {
-color: white;
-display: flex;
-list-style-type: none;
-justify-content: space-between;
-width: 300px;
+.grid-list ul {
+  color: white;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-ul li {
+.grid-list ul li {
   position: relative;
   list-style: none;
   padding: 10px 0;
@@ -168,15 +186,16 @@ ul li {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;  
+  left: 0;
   width: 50%;
   height: 2px;
-  background-color: #E6A62D;
+  background-color: #e6a62d;
   transform: translateX(50%);
 }
 
 .footer-li {
   text-decoration: none;
+  color: white;
 }
 
 .footer-li:visited {
@@ -184,66 +203,65 @@ ul li {
 }
 
 .footer-li:hover {
-  color: #E6A62D;
+  color: #e6a62d;
 }
 
 /* SMALLER SCREEN */
 
 @media screen and (max-width: 1200px) {
   .grid-container {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: repeat(2, minmax(0, 400px));
   }
 }
-
 
 /* TABLET */
 
 @media screen and (max-width: 960px) {
   .grid-container {
-    grid-template-columns: 700px;
+    grid-template-columns: minmax(0, 700px);
     grid-template-areas:
-    "grid-box-1" 
-    "grid-box-2"
-    "grid-box-4" 
-    "grid-box-3";
+      "grid-box-1"
+      "grid-box-2"
+      "grid-box-4"
+      "grid-box-3";
   }
 
-  .img-one {
-    max-width: 80%;
-    display: flex;
-    margin: auto;
-  }
-
+  .img-one,
   .img-two {
-    display: flex;
+    max-width: 80%;
+    display: block;
     margin: auto;
   }
 }
 
+/* MOBILE */
+
 @media screen and (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
+  .main-content {
+    max-width: 95%;
   }
-  
+
   .grid-container {
-    grid-template-columns: 440px;
+    grid-template-columns: minmax(0, 440px);
     margin-bottom: 100px;
     align-items: center;
   }
+
   .footer-container {
-    display: grid;
+    flex-direction: column;
     text-align: center;
-    height: auto;
   }
 
   .grid-list ul {
-    display: grid;
-    justify-content: center;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  section {
+    max-width: 100%;
+  }
+
   form {
-    width: 440px;
+    width: 100%;
   }
 }
