@@ -181,19 +181,21 @@ header {
     .content-section {
         flex-direction: column;
         padding: 10px;
-        position: relative; 
+    
     }
 
     .content-image img {
         width: 100%;
+        height: auto;
         border-radius: 50%;
     }
 
     .text-content {
         position: static;
-        text-align: center;
+        text-align: left;
         margin-bottom: 10px;
         width: 100%;
+        align-items: center;
      }
     h1 {
         font-size: 1.8rem;
@@ -207,3 +209,76 @@ header {
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .logo span {
+        font-size: 1.5rem;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+
+    .content-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .text-content {
+        position: static;
+        text-align: left;
+        margin-bottom: 10px;
+        width: 100%;
+        align-items: rileftght;
+     }
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .text-content p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+
+    .content-section {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        padding: 20px; /
+    }
+
+    .content-section img {
+        width: 400px; 
+        height: 400px; 
+        margin-bottom: 100px;
+    }
+
+    .text-content {
+        margin-left: 20px; 
+        width: auto; 
+        text-align: right; 
+    }
+
+    .text-content h2 {
+        font-size: 1.7rem; 
+    }
+
+    .text-content p {
+        font-size: 1.4rem; 
+    }
+
+}    
