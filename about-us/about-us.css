@@ -1,4 +1,5 @@
 body {
+
     font-family: Arial, sans-serif; 
     margin: 0px;
     padding: 0px;
@@ -7,6 +8,8 @@ body {
 }
 
 .content-grid {
+    width: 70%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;/
@@ -32,7 +35,7 @@ h1{
      text-align: center;
 }
 
-h2 {
+.text-content h2 {
     margin: 0; 
     font-family: 'Open Sans',sans-serif;
     text-align: center;
@@ -44,8 +47,8 @@ h2 {
  
 }
 .content-section img {
-    width: 300px; 
-    height: 300px; 
+    width: 400px; 
+    height: 400px; 
     border-radius: 50%; 
     align-self: flex-start; 
     box-shadow: 0 20px 17px rgba(0, 0, 0, 0.2); 
@@ -164,4 +167,63 @@ header {
 
 .nav-links ul li a:hover {
     color: #E6A62D;
+}
+
+/* SMALLER SCREEN */
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 400px 400px;
+  }
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 960px) {
+  .grid-container {
+    grid-template-columns: 700px;
+    grid-template-areas:
+    "grid-box-1" 
+    "grid-box-2"
+    "grid-box-4" 
+    "grid-box-3";
+  }
+
+  .img-one {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
+  .img-two {
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* Iphone */
+@media screen and (max-width: 768px) {
+  
+   .grid-container {
+    grid-template-columns: 300px;
+    margin: auto;
+  }
+  
+  .content-section{
+    width: 200px;
+    justify-content: space-evenly;
+  }
+
+  .footer-container {
+    display: grid;
+    text-align: center;
+    height: 400px;
+  }
+
+  .grid-list ul {
+    display: grid;
+    justify-content: center;
+    padding: 0;
+  }
 }
