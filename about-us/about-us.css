@@ -63,16 +63,18 @@ h1{
 }
 
 footer {
-    display: grid;
+    width: 100%;
 }
 
 .footer-container {
-    background-color: #021E37;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  background-color: #021e37;
 }
 
 .footer-container div h3 {
@@ -83,19 +85,21 @@ footer {
     color: white;
 }
 
-ul {
+.grid-list ul {
     color: white;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     width: 300px;
-}
-
-ul li {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .grid-list ul li {
     position: relative;
     list-style: none;
     padding: 10px 0;
-}
+  }
 
 .footer-container ul li::after {
     content: "";
@@ -211,9 +215,14 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .header-container {
+    /*.header-container {
         padding: 10px;
-    }
+    }*/
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
 
     .logo span {
         font-size: 1.5rem;
@@ -249,6 +258,16 @@ header {
     .text-content p {
         font-size: 1.6rem;
     }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .grid-list ul {
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
