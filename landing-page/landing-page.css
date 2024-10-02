@@ -20,6 +20,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 .logo img {
@@ -28,7 +29,6 @@ header {
 }
 
 .logo span {
-    font-weight: bold;
     font-size: 24px;
     color: #E6A62D;
 }
@@ -40,6 +40,7 @@ header {
     padding: 0;
     margin: 10px;
     gap: 15px;
+    font-family: 'Montserrat';
 }
 
 .nav-links ul li a {
