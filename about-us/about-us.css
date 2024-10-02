@@ -16,7 +16,6 @@ body {
 .content-section {
     display: flex;
     flex-direction: row; 
-    align-items: flex-start; 
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -49,6 +48,7 @@ h1{
     width: 400px; 
     height: 400px; 
     border-radius: 50%; 
+    object-fit: cover;
     align-self: flex-start; 
     box-shadow: 0 20px 17px rgba(0, 0, 0, 0.2); 
 }
