@@ -8,6 +8,19 @@ body {
   overflow-x: hidden;
 }
 
+section,
+p,
+#submit,
+li {
+  font-family: 'Montserrat';
+}
+
+span,
+h2,
+h3 {
+  font-family: 'Open Sans';
+}
+
 header {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
