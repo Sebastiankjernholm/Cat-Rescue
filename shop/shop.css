@@ -1,53 +1,45 @@
-
-* {
-    margin: 0%;
+*{
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box ;
+
 }
-
-
-.header {
+.header{
     background-color: white;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid#e0e0e0;
 }
-
-.header-container {
+.header-container{
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-
-.logo {
-
-    display: flex;
+.logo{
+    display:flex;
     align-items: center;
 }
-
 .logo img {
     height: 100px;
-    margin-right: 10px;
-    
-}
+    margin-right:10px;
 
-.logo span {
+}
+ .logo span{
     font-weight: bold;
-    font-size: 24px;
-    color: #E6A62D;
-    align-items: center;
-}
-
-.nav-links ul {
+    font-size : 24px;
+    color:#e6a62d
+ }
+ .nav-link ul {
     list-style: none;
-    display: flex;
+    display:flex;
     padding: 0;
     margin: 10px;
-    gap: 15px;
-}
+    gap: 15px
+    ;}
 
+    
 .nav-links ul li a {
     text-decoration: none;
-    color:#000000;
+    color: #000000;
     font-weight: 500;
     font-size: 18px;
 }
@@ -55,11 +47,12 @@
 .nav-links ul li a:hover {
     color: #E6A62D;
 }
-h1{
+
+h1 {
     text-align: center;
-    padding: auto
-    
+    padding: 15;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,50 +63,80 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.item {
+.item1 {
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fafafa;
+    width: 38vh;
+}
+.item2 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+    width: 35vh;
 }
 
-.item img {
+.item3 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 35vh;
+}
+.item4 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 35vh;
+}
+.item5 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 35vh;
+}
+.item6 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 35vh;
+}
+
+.item1-img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.price-button {
+.price-button,
+.pri-button {
     display: block;
     margin: 10px auto 0;
     padding: 10px 20px;
- background-color:#E6A62D;
-    color: #ffffff;
-    color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.price-button:hover {
-    background-color: #ffcc00;
-}
-.Cat-Accessory-1{
-    margin:10%;
-}
-.köp-now {
-    background-color:#021E37;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.köp-nu:hover {
+.price-button {
     background-color: #E6A62D;
+    color: #ffffff;
+}
+
+.pri-button {
+    background-color: #021E37;
+    color: #ffffff;
 }
 
 .footer {
@@ -127,15 +150,18 @@ h1{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .footer-container div h3 {
     color: #E6A62D;
+    padding-top: 30px;
 }
 
 .footer-container div p {
     color: white;
+    display: flex;
+    
+
 }
 
 ul {
@@ -144,14 +170,15 @@ ul {
     list-style-type: none;
     justify-content: space-between;
     width: 300px;
+    padding-top: 30px;
 }
 
 ul li {
     position: relative;
     list-style: none;
     padding: 10px 0;
+    display: flex;
 }
-
 
 .footer-container ul li::after {
     content: "";
@@ -162,11 +189,13 @@ ul li {
     height: 2px;
     background-color: #E6A62D;
     transform: translateX(50%);
+    display: flex;
 }
 
 .footer-li {
     color: white !important;
     text-decoration: none;
+    
 }
 
 .footer-li:visited {
@@ -177,22 +206,54 @@ ul li {
     color: #E6A62D !important;
 }
 
-
-/* tablet skärm */
-@media (max-width: 968px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
-    }
-}
-/* mobiletelefone*/
+/* ipad */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 10%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 50vh; 
     }
 }
-
+/** mobile skärm**/
 @media (max-width: 480px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 60px; 
+    }
+
+    .nav-links ul {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 15px; 
+    }
+    .Adoption-shop-kontakt-Om-oss {
+        display:flex;
+    }
 }
+
