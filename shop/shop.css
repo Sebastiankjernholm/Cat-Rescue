@@ -22,6 +22,7 @@
 
     display: flex;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 .logo img {
@@ -31,7 +32,6 @@
 }
 
 .logo span {
-    font-weight: bold;
     font-size: 24px;
     color: #E6A62D;
     align-items: center;
