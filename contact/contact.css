@@ -14,7 +14,7 @@ p,
 li {
   font-family: 'Montserrat';
 }
-
+span,
 h2,
 h3 {
   font-family: 'Open Sans';
@@ -35,17 +35,19 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  font-family: 'Open Sans';
 }
 
 .logo img {
   height: 100px;
   margin-right: 10px;
+  
 }
 
 .logo span {
-  font-weight: bold;
   font-size: 24px;
-  color: #e6a62d;
+  color: #E6A62D;
+  align-items: center;
 }
 
 .nav-links ul {

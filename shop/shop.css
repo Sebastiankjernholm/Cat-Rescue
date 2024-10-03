@@ -69,14 +69,14 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fafafa;
-    width: 38vh;
+    width: 35vh;
 }
 .item2 {
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    
+    background-color: #fafafa;
     width: 35vh;
 }
 
@@ -94,7 +94,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fafafa;
-    width: 35vh;
+    width: 30vh;
 }
 .item5 {
     text-align: center;
@@ -102,7 +102,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fafafa;
-    width: 35vh;
+    width: 30vh;
 }
 .item6 {
     text-align: center;
@@ -110,7 +110,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fafafa;
-    width: 35vh;
+    width: 30vh;
 }
 
 .item1-img {
