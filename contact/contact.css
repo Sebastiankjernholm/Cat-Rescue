@@ -11,7 +11,8 @@ body {
 section,
 p,
 #submit,
-li {
+li,
+span {
   font-family: 'Montserrat';
 }
 
@@ -43,7 +44,6 @@ header {
 }
 
 .logo span {
-  font-weight: bold;
   font-size: 24px;
   color: #e6a62d;
 }
