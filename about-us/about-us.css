@@ -86,13 +86,13 @@ footer {
     width: 300px;
     padding: 0;
     flex-wrap: wrap;
-  }
+}
   
-  .grid-list ul li {
+.grid-list ul li {
     position: relative;
     list-style: none;
     padding: 10px 0;
-  }
+}
 
 .footer-container ul li::after {
     content: "";
