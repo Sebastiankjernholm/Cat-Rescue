@@ -1,4 +1,6 @@
-*{
+*
+
+{
     margin: 0;
     padding: 0;
     box-sizing:border-box ;
@@ -17,6 +19,7 @@
 .logo{
     display:flex;
     align-items: center;
+    font-family: 'Open Sans';
 }
 .logo img {
     height: 100px;
@@ -25,21 +28,22 @@
 }
  .logo span{
     font-weight: bold;
-    font-size : 24px;
-    color:#e6a62d
+     color:#e6a62d
  }
  .nav-link ul {
     list-style: none;
     display:flex;
     padding: 0;
     margin: 10px;
-    gap: 15px
-    ;}
+    gap: 15px;
+    font-family: 'Montserrat';
+}
+    
 
     
 .nav-links ul li a {
     text-decoration: none;
-    color: #000000;
+    color: black;
     font-weight: 500;
     font-size: 18px;
 }
