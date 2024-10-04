@@ -64,52 +64,40 @@ h1 {
 }
 
 .item1 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    
     width: 35vh;
 }
 .item2 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    
     width: 35vh;
 }
 
 .item3 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+   
     width: 35vh;
 }
 .item4 {
-    text-align: center;
+    text-align:left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    
     width: 30vh;
 }
 .item5 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    
     width: 30vh;
 }
 .item6 {
-    text-align: center;
+    text-align:left;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+   
     width: 30vh;
 }
 
